@@ -1,0 +1,11 @@
+BasedOnStyle: LLVM
+FixNamespaceComments: false
+IndentWidth: 4
+ColumnLimit: 1000
+NamespaceIndentation: All
+IndentCaseLabels: true
+SortIncludes: Never
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+AlwaysBreakTemplateDeclarations: Yes
+AllowShortFunctionsOnASingleLine: None
