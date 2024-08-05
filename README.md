@@ -1,5 +1,5 @@
 # stand-dll
-https://stand.gg/ support for Linux/Wine
+[stand](https://stand.sh) support for Linux/Wine
 
 ## precautions
 * linux
