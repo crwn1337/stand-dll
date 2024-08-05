@@ -60,7 +60,7 @@ void attach() {
     const auto versions_file = bin_folder + L"\\versions.txt";
     if (file_exists(versions_file))
         delete_file(versions_file);
-    if (URLDownloadToFileW(nullptr, L"https://stand.gg/versions.txt", versions_file.c_str(), BINDF_GETNEWESTVERSION, nullptr) != S_OK) {
+    if (URLDownloadToFileW(nullptr, L"https://stand.sh/versions.txt", versions_file.c_str(), BINDF_GETNEWESTVERSION, nullptr) != S_OK) {
         MessageBoxW(nullptr, L"Failed to get the version list :(", L"Stand", MB_ICONERROR);
         return;
     }
@@ -69,7 +69,7 @@ void attach() {
     const auto dll_file = bin_folder + L"\\stand.dll";
     if (file_exists(dll_file))
         delete_file(dll_file);
-    if (URLDownloadToFileW(nullptr, (std::wstring(L"https://stand.gg/Stand%20") + dll_version + std::wstring(L".dll")).c_str(), dll_file.c_str(), BINDF_GETNEWESTVERSION, nullptr) != S_OK) {
+    if (URLDownloadToFileW(nullptr, (std::wstring(L"https://stand.sh/Stand%20") + dll_version + std::wstring(L".dll")).c_str(), dll_file.c_str(), BINDF_GETNEWESTVERSION, nullptr) != S_OK) {
         MessageBoxW(nullptr, L"Failed to get the dll :(", L"Stand", MB_ICONERROR);
         return;
     }
